@@ -1,0 +1,17 @@
+<p>
+  <% @tables.each do |row| %>
+      <li>
+        <p>
+          Title: <%= row["title"] %>
+        </p>
+        <p>
+          URL: <a target="_blank" href="<%=row['url']%>"> <%= row["url"] %></a>
+        </p>
+        <p>
+          Description: <%= row["description"] %>
+        </p>
+      </li>
+  <% end %>
+</p>
+
+<a href="/articles/new">Submit New Article</a>
